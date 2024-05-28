@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contact-container {
+            background: #111;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            width: 60%;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form input, .contact-form textarea {
+            background: #333;
+            border: none;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+        }
+        .contact-form button {
+            background: #0066cc;
+            border: none;
+            padding: 15px;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .contact-form button:hover {
+            background: #005bb5;
+        }
+        .contact-info {
+            margin-top: 40px;
+        }
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+        .contact-info div i {
+            margin-right: 10px;
+        }
+        .social-icons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons a {
+            color: #fff;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .social-icons a:hover {
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <h1>Contact</h1>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" rows="6" placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="contact-info">
+            <div><i class="fas fa-map-marker-alt"></i> City, State</div>
+            <div><i class="fas fa-phone"></i> (212) 555-2368</div>
+            <div><i class="fas fa-envelope"></i> hitmeup@gmail.com</div>
+        </div>
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-codepen"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
